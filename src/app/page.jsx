@@ -1,11 +1,12 @@
 import Navbar from "../components/navbar/navbar";
 import { sansitaSwashed } from "../app/layout";
-import Searchbar from "../components/Searchbar";
+import SearchBar from "../components/SearchBar";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
+
       <h1
         className={sansitaSwashed.className}
         style={{
@@ -16,7 +17,7 @@ export default function Home() {
       >
         Plan your date
       </h1>
-      <Searchbar />
+      <SearchBar />
     </div>
   );
 }
