@@ -10,11 +10,11 @@ const Navbar = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true); // Trigger re-render after client-side mount
+    setIsClient(true);
   }, []);
 
   if (!isClient) {
-    return null; // You can render a fallback like a static navbar or loading state here
+    return null;
   }
 
   return (
